@@ -31,8 +31,8 @@ export default function MdmCaseStudy() {
             label: "LINKS",
             value: (
               <span className="flex flex-wrap gap-4">
-                <a href="https://sagui-docs.vercel.app/">SagUI docs ↗</a>
-                <a href="https://github.com/sagnikdey/mdm">GitHub ↗</a>
+                <a href="https://sagui-docs.vercel.app/" target="_blank" rel="noopener noreferrer">SagUI docs ↗</a>
+                <a href="https://github.com/sagnikdey/mdm" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
               </span>
             ),
           },

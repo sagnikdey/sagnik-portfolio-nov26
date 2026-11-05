@@ -37,6 +37,7 @@ export type Project = {
   meta?: string;
   role: string;
   live?: { href: string; label: string };
+  links?: { href: string; label: string }[];
   caption?: string;
   images: CollageImage[];
   flagship?: boolean;
@@ -53,6 +54,7 @@ export const projects: Project[] = [
     description: "A design system built for people and AI agents, so new apps get assembled from proven parts instead of invented.",
     meta: "85 components · two-tier tokens · MCP server",
     live: { href: "https://sagui-docs.vercel.app/", label: "Live docs" },
+    links: [{ href: "https://www.figma.com/design/kNksgXgWFkl9ejS9RVm2Hq/SagUI-Design-System", label: "Figma" }],
     caption: "FIGMA → TOKENS → CODE → MCP",
     cover: { src: "/images/sagui/kit-cover.jpg", alt: "SagUI design system sheets laid out at an angle: typography, color, buttons, radius, selection controls, charts, metrics, inputs, a stepper, agent-native components and the app shell" },
     flagship: true,
@@ -131,6 +133,4 @@ export type Quote = { quote: string; name: string; role: string; lead?: boolean;
 export const quotes: Quote[] = [
   { quote: "He would be assigned to the most difficult, complex designs—and would knock them out of the park every time.", name: "EDDY RUZ", role: "Sr. Principal Lead, Bazaarvoice", lead: true },
   { quote: "I've seen him tackle massive projects for Fortune 500 Companies like Best Buy, Walmart, HP and countless others. He's decisive and intuitive.", name: "BILLY HOLLIS", role: "Developer & Designer" },
-  // TODO: replace with a real quote from a 7-Eleven engineer or PM about 7-UI.
-  { quote: "[Quote from a 7-Eleven engineer or PM about 7-UI, or how you structured their product]", name: "[NAME]", role: "[Role, 7-Eleven GSC]", placeholder: true },
 ];

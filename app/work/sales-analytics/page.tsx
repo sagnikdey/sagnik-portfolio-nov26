@@ -34,8 +34,8 @@ export default function SalesAnalyticsCaseStudy() {
             label: "LINKS",
             value: (
               <span className="flex flex-wrap gap-4">
-                <a href="https://sales-analytics-delta-one.vercel.app/">Live demo ↗</a>
-                <a href="https://github.com/sagnikdey/sales-analytics">GitHub ↗</a>
+                <a href="https://sales-analytics-delta-one.vercel.app/" target="_blank" rel="noopener noreferrer">Live demo ↗</a>
+                <a href="https://github.com/sagnikdey/sales-analytics" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
               </span>
             ),
           },

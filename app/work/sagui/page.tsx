@@ -94,9 +94,9 @@ export default function SagUICaseStudy() {
                 label: "LINKS",
                 value: (
                   <span className="flex flex-wrap gap-4">
-                    <a href="https://www.figma.com/design/kNksgXgWFkl9ejS9RVm2Hq/SagUI-Design-System">Figma ↗</a>
-                    <a href="https://sagnikdey.github.io/sagui/">Storybook ↗</a>
-                    <a href="https://sagui-docs.vercel.app/components">Docs ↗</a>
+                    <a href="https://www.figma.com/design/kNksgXgWFkl9ejS9RVm2Hq/SagUI-Design-System" target="_blank" rel="noopener noreferrer">Figma ↗</a>
+                    <a href="https://sagnikdey.github.io/sagui/" target="_blank" rel="noopener noreferrer">Storybook ↗</a>
+                    <a href="https://sagui-docs.vercel.app/components" target="_blank" rel="noopener noreferrer">Docs ↗</a>
                   </span>
                 ),
               },

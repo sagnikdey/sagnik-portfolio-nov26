@@ -23,7 +23,8 @@ export function WorkCard({ p, compact = false }: { p: Project; compact?: boolean
         {p.meta && <p className="font-mono text-caption text-ink-muted">{p.meta}</p>}
         <div className="mt-auto flex flex-wrap gap-5 border-t border-border-subtle pt-3.5 font-medium">
           <Link href={`/work/${p.slug}`}>Case study →</Link>
-          {p.live && <a href={p.live.href}>{p.live.label} ↗</a>}
+          {p.live && <a href={p.live.href} target="_blank" rel="noopener noreferrer">{p.live.label} ↗</a>}
+          {p.links?.map((l) => <a key={l.href} href={l.href} target="_blank" rel="noopener noreferrer">{l.label} ↗</a>)}
         </div>
       </div>
     </article>
