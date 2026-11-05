@@ -54,7 +54,10 @@ export const projects: Project[] = [
     description: "A design system built for people and AI agents, so new apps get assembled from proven parts instead of invented.",
     meta: "85 components · two-tier tokens · MCP server",
     live: { href: "https://sagui-docs.vercel.app/", label: "Live docs" },
-    links: [{ href: "https://www.figma.com/design/kNksgXgWFkl9ejS9RVm2Hq/SagUI-Design-System", label: "Figma" }],
+    links: [
+      { href: "https://www.figma.com/design/kNksgXgWFkl9ejS9RVm2Hq/SagUI-Design-System", label: "Figma" },
+      { href: "https://sagnikdey.github.io/sagui/", label: "Storybook" },
+    ],
     caption: "FIGMA → TOKENS → CODE → MCP",
     cover: { src: "/images/sagui/kit-cover.jpg", alt: "SagUI design system sheets laid out at an angle: typography, color, buttons, radius, selection controls, charts, metrics, inputs, a stepper, agent-native components and the app shell" },
     flagship: true,
@@ -76,7 +79,8 @@ export const projects: Project[] = [
     featured: true,
     role: "Product Designer & Design-Engineer",
     description: "Enterprise master data for convenience-store vendors: an admin console, invite-only onboarding and a vendor portal, with staging-and-approval workflows — rebuilt on SagUI.",
-    live: { href: "https://github.com/sagnikdey/mdm", label: "Code" },
+    live: { href: "https://mdm-vendor-portal.vercel.app", label: "Live demo" },
+    links: [{ href: "https://github.com/sagnikdey/mdm", label: "Code" }],
     images: [
       { src: "/images/mdm/v2/admin-dashboard.png", alt: "MDM admin dashboard with store, vendor, product and inventory counts", role: "back-left", style: "left-[6%] top-[36px] w-[64%]" },
       { src: "/images/mdm/v2/portal-products.png", alt: "Vendor portal product catalog", role: "front", style: "-right-[6%] top-[110px] w-[70%]" },
