@@ -162,3 +162,14 @@ export function NextCase({ href, label, title }: { href: string; label: string; 
     </section>
   );
 }
+
+/** Flat SagUI kit panels (real component screenshots on rounded cards). */
+export function KitPanels({ items, min = "300px" }: { items: { src: string; alt: string; w: number; h: number }[]; min?: string }) {
+  return (
+    <div className="gap-4 md:columns-2 lg:columns-3" style={{ columnWidth: min }}>
+      {items.map((it) => (
+        <Image key={it.src} src={it.src} alt={it.alt} width={it.w} height={it.h} sizes="(min-width: 1024px) 33vw, 90vw" className="mb-4 h-auto w-full break-inside-avoid border border-ink" />
+      ))}
+    </div>
+  );
+}

@@ -4,10 +4,11 @@ import type { Metadata } from "next";
 import { Tag } from "@/components/tag";
 import { SpecPanel } from "@/components/spec-panel";
 import { ProofBar } from "@/components/proof-bar";
-import { Collage } from "@/components/collage";
 import { StepCards } from "@/components/step-cards";
 import { InkPanel } from "@/components/ink-panel";
 import { ConsoleBlock } from "@/components/console-block";
+import { CoverArt } from "@/components/cover-art";
+import { KitPanels } from "@/components/case-study";
 import { projects } from "@/content/site";
 
 export const metadata: Metadata = { title: "SagUI — a design system built for AI agents · Sagnik Dey" };
@@ -114,7 +115,7 @@ export default function SagUICaseStudy() {
 
       <section aria-label="Cover" className="container-page pt-12">
         <div className="group border border-ink">
-          <Collage images={sagui.images} caption={sagui.caption} className="h-[560px]" />
+          <CoverArt src={sagui.cover!.src} alt={sagui.cover!.alt} className="h-[420px] md:h-[620px]" />
         </div>
       </section>
 
@@ -178,6 +179,15 @@ export default function SagUICaseStudy() {
             ))}
           </ul>
         </div>
+        <div className="mt-12">
+          <KitPanels
+            items={[
+              { src: "/images/sagui/kit/color.jpg", alt: "Color panel: SagUI primitive ramps from the Figma library — brand teal, brand raspberry, neutrals and blue, steps 50 to 950", w: 1020, h: 546 },
+              { src: "/images/sagui/kit/typography.jpg", alt: "Typography panel: SagUI type roles from display down to title", w: 1020, h: 743 },
+              { src: "/images/sagui/kit/radius.jpg", alt: "Radius panel: SagUI corner scale from xs to pill", w: 1020, h: 516 },
+            ]}
+          />
+        </div>
       </section>
 
       <section aria-labelledby="components" className="container-page pt-24">
@@ -193,6 +203,18 @@ export default function SagUICaseStudy() {
             <b className="font-mono text-caption text-inverse-accent">AGENT-NATIVE</b>
             <p className="mt-2 text-small text-inverse-muted">Approval card — human-in-the-loop questions before an agent acts · Text shimmer · Text morph</p>
           </div>
+        </div>
+        <div className="mt-8">
+          <KitPanels
+            items={[
+              { src: "/images/sagui/kit/buttons.jpg", alt: "Buttons panel: primary, secondary, ghost and destructive SagUI buttons", w: 1020, h: 427 },
+              { src: "/images/sagui/kit/selection.jpg", alt: "Selection panel: SagUI radio cards, chip group and segmented control", w: 1020, h: 981 },
+              { src: "/images/sagui/kit/data-table.jpg", alt: "Data table panel: SagUI sortable data table with status badges", w: 1020, h: 696 },
+              { src: "/images/sagui/kit/app-shell.jpg", alt: "App shell panel: SagUI app shell with sidebar and overview metrics", w: 1020, h: 873 },
+              { src: "/images/sagui/kit/agent-native.jpg", alt: "Agent-native panel: SagUI approval card and command palette", w: 1020, h: 1456 },
+              { src: "/images/sagui/kit/charts.jpg", alt: "Charts panel: SagUI line chart and donut chart", w: 1020, h: 2325 },
+            ]}
+          />
         </div>
         <div className="mt-8 grid grid-cols-[repeat(auto-fit,minmax(min(100%,420px),1fr))] items-center gap-8">
           <div className="flex flex-col gap-3.5 text-body">
