@@ -20,9 +20,7 @@ export default function QuickstopCaseStudy() {
   return (
     <>
       <CsIntro
-        number="04"
         tag={{ label: "Product", variant: "outline" }}
-        year="2025–26"
         title="QuickStop: a convenience-store app built for"
         accent="certainty."
         lead={
@@ -275,7 +273,7 @@ export default function QuickstopCaseStudy() {
         </div>
       </CsSection>
 
-      <NextCase href="/work/vesta" label="05 PRODUCT" title="Vesta" />
+      <NextCase href="/work/vesta" label="PRODUCT" title="Vesta" />
     </>
   );
 }

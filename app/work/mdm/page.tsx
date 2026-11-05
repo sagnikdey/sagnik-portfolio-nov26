@@ -13,9 +13,7 @@ export default function MdmCaseStudy() {
   return (
     <>
       <CsIntro
-        number="02"
         tag={{ label: "Platform", variant: "outline" }}
-        year="2025–26"
         title="MDM: master data for convenience-store vendors,"
         accent="governed by design."
         lead={
@@ -319,7 +317,7 @@ export default function MdmCaseStudy() {
         </div>
       </CsSection>
 
-      <NextCase href="/work/sales-analytics" label="03 BUILT ON SAGUI" title="Sales Analytics" />
+      <NextCase href="/work/sales-analytics" label="BUILT ON SAGUI" title="Sales Analytics" />
     </>
   );
 }

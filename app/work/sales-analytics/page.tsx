@@ -16,9 +16,7 @@ export default function SalesAnalyticsCaseStudy() {
   return (
     <>
       <CsIntro
-        number="03"
         tag={{ label: "Built on SagUI", variant: "accent-outline" }}
-        year="2026"
         title="Sales Analytics: from signal to"
         accent="action."
         lead={
@@ -228,7 +226,7 @@ export default function SalesAnalyticsCaseStudy() {
         </div>
       </CsSection>
 
-      <NextCase href="/work/quickstop-ios" label="04 PRODUCT" title="QuickStop iOS" />
+      <NextCase href="/work/quickstop-ios" label="PRODUCT" title="QuickStop iOS" />
     </>
   );
 }

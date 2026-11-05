@@ -75,7 +75,7 @@ export default function SagUICaseStudy() {
       <section aria-label="Introduction" className="container-page pt-14">
         <Link href="/#work" className="font-mono text-label">← Work</Link>
         <p className="mt-6 mb-5 flex flex-wrap items-center gap-2.5 font-mono text-label">
-          <span>CASE STUDY 01</span><Tag variant="fill">System</Tag><span>2026</span>
+          <span>CASE STUDY</span><Tag variant="fill">System</Tag>
         </p>
         <h1 className="max-w-[1150px] text-display font-bold">
           SagUI: a design system built for <span className="text-accent">AI agents.</span>
@@ -300,7 +300,7 @@ export default function SagUICaseStudy() {
 
       <section aria-label="Next case study" className="container-page py-16">
         <Link href="/work/mdm" className="flex flex-wrap items-center justify-between gap-4 bg-accent px-10 py-8 text-on-accent hover:text-on-accent">
-          <span className="font-mono text-label">NEXT CASE STUDY · 02 PLATFORM</span>
+          <span className="font-mono text-label">NEXT CASE STUDY · PLATFORM</span>
           <span className="text-title-l font-bold">MDM Platform →</span>
         </Link>
       </section>

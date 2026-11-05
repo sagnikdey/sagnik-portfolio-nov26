@@ -26,13 +26,11 @@ export default function WorkIndex() {
             <li key={p.slug} className="border-b border-dot">
               <Link
                 href={`/work/${p.slug}`}
-                className="grid grid-cols-[48px_1fr_auto] items-baseline gap-x-4 gap-y-1 py-5 md:grid-cols-[64px_1.2fr_auto_1.4fr_120px_32px]"
+                className="grid grid-cols-[1fr_auto] items-baseline gap-x-4 gap-y-1 py-5 md:grid-cols-[1.2fr_auto_1.4fr_32px]"
               >
-                <span className="font-mono text-label">{p.number}</span>
                 <span className="text-title font-bold">{p.title}</span>
                 <span className="font-mono text-label"><Tag variant={p.tag.variant}>{p.tag.label}</Tag></span>
                 <span className="col-span-full text-small text-ink-muted md:col-span-1">{p.role}</span>
-                <span className="hidden font-mono text-caption md:block">{p.year}</span>
                 <span aria-hidden className="hidden text-right md:block">→</span>
               </Link>
             </li>

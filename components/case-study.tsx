@@ -8,11 +8,9 @@ type TagVariant = "fill" | "outline" | "accent-outline";
 
 /** Intro block for every case study: back link, tags, h1, lead + spec panel, proof bar. */
 export function CsIntro({
-  number, tag, year, title, accent, lead, spec, proof,
+  tag, title, accent, lead, spec, proof,
 }: {
-  number: string;
   tag: { label: string; variant: TagVariant };
-  year: string;
   title: string;
   accent: string;
   lead: React.ReactNode;
@@ -23,9 +21,8 @@ export function CsIntro({
     <section aria-label="Introduction" className="container-page pt-14">
       <Link href="/work" className="font-mono text-label">← Work</Link>
       <p className="mt-6 mb-5 flex flex-wrap items-center gap-2.5 font-mono text-label">
-        <span>CASE STUDY {number}</span>
+        <span>CASE STUDY</span>
         <Tag variant={tag.variant}>{tag.label}</Tag>
-        <span>{year}</span>
       </p>
       <h1 className="max-w-[1150px] text-display font-bold">
         {title} <span className="text-accent">{accent}</span>

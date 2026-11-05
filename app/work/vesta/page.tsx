@@ -19,9 +19,7 @@ export default function VestaCaseStudy() {
   return (
     <>
       <CsIntro
-        number="05"
         tag={{ label: "Product", variant: "outline" }}
-        year="2026 – ongoing"
         title="Vesta: a pantry that keeps itself"
         accent="accurate."
         lead={
@@ -180,7 +178,7 @@ export default function VestaCaseStudy() {
         />
       </CsSection>
 
-      <NextCase href="/work/sagui" label="01 SYSTEM" title="SagUI" />
+      <NextCase href="/work/sagui" label="SYSTEM" title="SagUI" />
     </>
   );
 }
