@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+/* Sagnik Portfolio design system — tokens. See design-system/rules-for-ai.md */
+@theme {
+  --font-sans: var(--font-space-grotesk), system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+
+  --color-*: initial;
+  --color-ground: #e4e5e7;
+  --color-dot: #b4b8be;
+  --color-plate: #d4d6db;
+  --color-dot-strong: #a7acb3;
+  --color-surface: #f7f7f7;
+  --color-surface-raised: #f4f5f6;
+  --color-ink: #111214;
+  --color-ink-body: #2d3034;
+  --color-ink-muted: #45484d;
+  --color-border-subtle: #c4c7cc;
+  --color-accent: #3d3dff;
+  --color-on-accent: #ffffff;
+  --color-on-accent-muted: #e6e6ff;
+  --color-on-accent-rule: #8f8fff;
+  --color-inverse-text: #ffffff;
+  --color-inverse-muted: #d6d7da;
+  --color-inverse-accent: #9c9cff;
+  --color-inverse-rule: #3a3d43;
+  --color-console: #121a19;
+  --color-console-line: #1d2726;
+  --color-console-text: #e8eeed;
+  --color-console-muted: #9fb0ae;
+  --color-console-success: #7fd6c9;
+  --color-transparent: transparent;
+  --color-current: currentColor;
+
+  --text-display: clamp(48px, 8vw, 112px);
+  --text-display--line-height: 0.92;
+  --text-display--letter-spacing: -0.05em;
+  --text-section: clamp(40px, 5vw, 56px);
+  --text-section--line-height: 0.95;
+  --text-section--letter-spacing: -0.055em;
+  --text-title-l: 40px;
+  --text-title-l--line-height: 1.05;
+  --text-title-l--letter-spacing: -0.03em;
+  --text-title: 28px;
+  --text-title--line-height: 1.1;
+  --text-title--letter-spacing: -0.02em;
+  --text-stat: 36px;
+  --text-stat--line-height: 1;
+  --text-stat--letter-spacing: -0.03em;
+  --text-quote: 22px;
+  --text-quote--line-height: 1.4;
+  --text-lead: 20px;
+  --text-lead--line-height: 1.5;
+  --text-body: 17px;
+  --text-body--line-height: 1.6;
+  --text-small: 15px;
+  --text-small--line-height: 1.5;
+  --text-label: 13px;
+  --text-label--line-height: 1.4;
+  --text-label--letter-spacing: 0.04em;
+  --text-caption: 12px;
+  --text-caption--line-height: 1.4;
+  --text-chip: 11px;
+  --text-chip--line-height: 1.2;
+
+  --radius-*: initial;
+  --radius-none: 0px;
+  --shadow-*: initial;
+  --shadow-back: 0 18px 40px rgba(17, 18, 20, 0.18);
+  --shadow-front: 0 28px 60px rgba(17, 18, 20, 0.28);
+
+  --ease-collage: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@utility container-page {
+  margin-inline: auto;
+  max-width: 1360px;
+  padding-inline: 2rem;
+}
+
+@utility bg-dots {
+  background-image: radial-gradient(var(--color-dot) 1px, transparent 1.2px);
+  background-size: 22px 22px;
+}
+
+@utility bg-plate-dots {
+  background-color: var(--color-plate);
+  background-image: radial-gradient(var(--color-dot-strong) 1px, transparent 1.2px);
+  background-size: 18px 18px;
+}
+
+@layer base {
+  a { text-decoration: none; }
+  a:hover { color: var(--color-accent); }
+  :focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+}
