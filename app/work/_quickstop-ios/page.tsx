@@ -7,7 +7,7 @@ import { projects } from "@/content/site";
 
 export const metadata: Metadata = { title: "QuickStop — a convenience-store app built for certainty · Sagnik Dey" };
 
-const qs = projects.find((p) => p.slug === "quickstop-ios")!;
+const qs = projects.find((p) => p.slug === "quickstop-ios")! // hidden: entry commented out in content/site.ts;
 
 const brand = [
   { label: "Teal", token: "brandPrimary", hex: "#30C5FF" },

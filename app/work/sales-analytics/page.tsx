@@ -226,7 +226,7 @@ export default function SalesAnalyticsCaseStudy() {
         </div>
       </CsSection>
 
-      <NextCase href="/work/quickstop-ios" label="PRODUCT" title="QuickStop iOS" />
+      <NextCase href="/work/sagui" label="SYSTEM" title="SagUI" />
     </>
   );
 }

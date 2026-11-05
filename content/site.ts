@@ -96,33 +96,34 @@ export const projects: Project[] = [
       { src: "/images/sales-analytics/alerts.png", alt: "Sales Analytics alerts", role: "back-right", style: "right-[6%] top-[130px] w-[50%]" },
     ],
   },
-  {
-    slug: "quickstop-ios",
-    number: "04",
-    title: "QuickStop iOS",
-    tag: { label: "Product", variant: "outline" },
-    year: "2025–26",
-    role: "Product Designer & iOS Developer",
-    description: "End-to-end convenience-store iOS experience — research, flows and a design system in SwiftUI, built for certainty at the point of need.",
-    images: [
-      { src: "/images/quickstop/onboarding-flow.png", alt: "QuickStop onboarding flow", role: "back-left", style: "left-[4%] top-[40px] w-[70%]" },
-      { src: "/images/quickstop/you-tab.png", alt: "QuickStop You tab", role: "front", style: "right-[8%] top-[56px] w-[24%]" },
-    ],
-  },
-  {
-    slug: "vesta",
-    number: "05",
-    title: "Vesta",
-    tag: { label: "Product", variant: "outline" },
-    year: "2026 – ongoing",
-    role: "Product Designer & Solo Builder",
-    description: "A pantry-intelligence iOS app — voice, barcode and receipt logging, designed through Design Thinking as a solo build.",
-    images: [
-      { src: "/images/vesta/onboarding-welcome.png", alt: "Vesta onboarding welcome screen", role: "back-left", style: "left-[12%] top-[56px] w-[22%]" },
-      { src: "/images/vesta/voice-logging.png", alt: "Vesta voice logging screen", role: "back-right", style: "right-[12%] top-[56px] w-[22%]" },
-      { src: "/images/vesta/home-screen-converged.png", alt: "Vesta home screen", role: "front", style: "left-[39%] top-[32px] w-[22%]" },
-    ],
-  },
+  // Hidden until rebuilt — uncomment to show again.
+  // {
+  //   slug: "quickstop-ios",
+  //   number: "04",
+  //   title: "QuickStop iOS",
+  //   tag: { label: "Product", variant: "outline" },
+  //   year: "2025–26",
+  //   role: "Product Designer & iOS Developer",
+  //   description: "End-to-end convenience-store iOS experience — research, flows and a design system in SwiftUI, built for certainty at the point of need.",
+  //   images: [
+  //     { src: "/images/quickstop/onboarding-flow.png", alt: "QuickStop onboarding flow", role: "back-left", style: "left-[4%] top-[40px] w-[70%]" },
+  //     { src: "/images/quickstop/you-tab.png", alt: "QuickStop You tab", role: "front", style: "right-[8%] top-[56px] w-[24%]" },
+  //   ],
+  // },
+  // {
+  //   slug: "vesta",
+  //   number: "05",
+  //   title: "Vesta",
+  //   tag: { label: "Product", variant: "outline" },
+  //   year: "2026 – ongoing",
+  //   role: "Product Designer & Solo Builder",
+  //   description: "A pantry-intelligence iOS app — voice, barcode and receipt logging, designed through Design Thinking as a solo build.",
+  //   images: [
+  //     { src: "/images/vesta/onboarding-welcome.png", alt: "Vesta onboarding welcome screen", role: "back-left", style: "left-[12%] top-[56px] w-[22%]" },
+  //     { src: "/images/vesta/voice-logging.png", alt: "Vesta voice logging screen", role: "back-right", style: "right-[12%] top-[56px] w-[22%]" },
+  //     { src: "/images/vesta/home-screen-converged.png", alt: "Vesta home screen", role: "front", style: "left-[39%] top-[32px] w-[22%]" },
+  //   ],
+  // },
 ];
 
 export type Quote = { quote: string; name: string; role: string; lead?: boolean; placeholder?: boolean };
