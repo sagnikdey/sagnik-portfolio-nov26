@@ -9,9 +9,10 @@ export function WorkCard({ p, compact = false }: { p: Project; compact?: boolean
     <article className={`group flex overflow-hidden border border-ink bg-surface ${flag ? "col-span-full flex-wrap" : "flex-col"}`}>
       <Collage images={p.images} caption={p.caption} className={flag ? "h-[460px] flex-[2_1_560px]" : "h-[340px]"} />
       <div className={`flex flex-col gap-3 ${flag ? "flex-[1_1_300px] p-7" : "flex-1 p-6"}`}>
-        <p className="flex items-center gap-2.5 font-mono text-label">
+        <p className="flex flex-wrap items-center gap-2.5 font-mono text-label">
           <span>{p.number}</span>
           <Tag variant={p.tag.variant}>{p.tag.label}</Tag>
+          {p.extraTags?.map((t) => <Tag key={t.label} variant={t.variant}>{t.label}</Tag>)}
           <span>{p.year}</span>
         </p>
         <h3 className={`font-bold ${flag ? "text-title-l" : "text-title"}`}>{p.title}</h3>

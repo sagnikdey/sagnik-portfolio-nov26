@@ -30,6 +30,7 @@ export type Project = {
   number: string;
   title: string;
   tag: { label: string; variant: "fill" | "outline" | "accent-outline" };
+  extraTags?: { label: string; variant: "fill" | "outline" | "accent-outline" }[];
   year: string;
   description: string;
   meta?: string;
@@ -66,6 +67,7 @@ export const projects: Project[] = [
     number: "02",
     title: "MDM Platform",
     tag: { label: "Platform", variant: "outline" },
+    extraTags: [{ label: "Built on SagUI", variant: "accent-outline" }],
     year: "2025–26",
     featured: true,
     role: "Product Designer & Design-Engineer",
