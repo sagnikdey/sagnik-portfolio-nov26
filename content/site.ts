@@ -30,6 +30,7 @@ export type Project = {
   number: string;
   title: string;
   tag: { label: string; variant: "fill" | "outline" | "accent-outline" };
+  cover?: { src: string; alt: string };
   extraTags?: { label: string; variant: "fill" | "outline" | "accent-outline" }[];
   year: string;
   description: string;
@@ -53,6 +54,7 @@ export const projects: Project[] = [
     meta: "85 components · two-tier tokens · MCP server",
     live: { href: "https://sagui-docs.vercel.app/", label: "Live docs" },
     caption: "FIGMA → TOKENS → CODE → MCP",
+    cover: { src: "/images/sagui/posters/cover.jpg", alt: "A tilted grid of SagUI posters: real SagUI components — charts, an approval card, radio cards, an app shell — framed in rings and half-circles on salmon, navy, teal and cream" },
     flagship: true,
     featured: true,
     role: "Design Systems Lead & Design-Engineer",
