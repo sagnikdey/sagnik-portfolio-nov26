@@ -89,6 +89,7 @@ export const projects: Project[] = [
     featured: true,
     role: "Product Designer & Design-Engineer",
     description: "A 10-store dashboard that turns alerts into tracked actions: best and worst sellers, store comparisons and inventory risk.",
+    cover: { src: "/images/sales-analytics/kit-cover.jpg", alt: "Sales Analytics screens laid out at an angle as panels: overview metrics, revenue trend, best and worst sellers, store targets, category map, stock health, alert inbox, recommended action, take action, action tracker, inventory health and product detail" },
     live: { href: "https://sales-analytics-delta-one.vercel.app/", label: "Live demo" },
     images: [
       { src: "/images/sales-analytics/dashboard.png", alt: "Sales Analytics dashboard", role: "front", style: "-left-[6%] top-[40px] w-[80%]" },
