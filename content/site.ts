@@ -69,11 +69,11 @@ export const projects: Project[] = [
     year: "2025–26",
     featured: true,
     role: "Product Designer & Design-Engineer",
-    description: "Enterprise master data for convenience-store vendors: admin and vendor portals, staging-and-approval workflows, and a shipped design system.",
-    live: { href: "https://design-system-three-brown.vercel.app/", label: "Live UI kit" },
+    description: "Enterprise master data for convenience-store vendors: an admin console, invite-only onboarding and a vendor portal, with staging-and-approval workflows — rebuilt on SagUI.",
+    live: { href: "https://github.com/sagnikdey/mdm", label: "Code" },
     images: [
-      { src: "/images/mdm/design-system.png", alt: "MDM design system components", role: "back-left", style: "left-[8%] top-[36px] w-[62%]" },
-      { src: "/images/mdm/mdm_productspage.png", alt: "MDM products page", role: "front", style: "-right-[6%] top-[96px] w-[78%]" },
+      { src: "/images/mdm/v2/admin-dashboard.png", alt: "MDM admin dashboard with store, vendor, product and inventory counts", role: "back-left", style: "left-[6%] top-[36px] w-[64%]" },
+      { src: "/images/mdm/v2/portal-products.png", alt: "Vendor portal product catalog", role: "front", style: "-right-[6%] top-[110px] w-[70%]" },
     ],
   },
   {

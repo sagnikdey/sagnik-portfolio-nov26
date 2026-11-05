@@ -4,7 +4,7 @@ import { projects } from "@/content/site";
 import { ContactStrip } from "@/components/contact-strip";
 
 export function generateStaticParams() {
-  return projects.filter((p) => p.slug !== "sagui").map((p) => ({ slug: p.slug }));
+  return projects.filter((p) => !["sagui", "mdm", "vesta", "quickstop-ios"].includes(p.slug)).map((p) => ({ slug: p.slug }));
 }
 
 export default async function CaseStudyStub({ params }: PageProps<"/work/[slug]">) {
