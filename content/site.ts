@@ -30,6 +30,7 @@ export type Project = {
   number: string;
   title: string;
   tag: { label: string; variant: "fill" | "outline" | "accent-outline" };
+  cover?: { src: string; alt: string };
   extraTags?: { label: string; variant: "fill" | "outline" | "accent-outline" }[];
   year: string;
   description: string;
@@ -53,6 +54,7 @@ export const projects: Project[] = [
     meta: "85 components · two-tier tokens · MCP server",
     live: { href: "https://sagui-docs.vercel.app/", label: "Live docs" },
     caption: "FIGMA → TOKENS → CODE → MCP",
+    cover: { src: "/images/sagui/kit-cover.jpg", alt: "SagUI design system sheets laid out at an angle: typography, color, buttons, radius, selection controls, charts, metrics, inputs, a stepper, agent-native components and the app shell" },
     flagship: true,
     featured: true,
     role: "Design Systems Lead & Design-Engineer",
