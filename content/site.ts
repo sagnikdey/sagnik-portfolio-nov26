@@ -12,7 +12,7 @@ export const proof = [
   { value: "85", label: "SagUI components, Figma ↔ code" },
   { value: "6", label: "MCP tools for AI agents" },
   // TODO: replace with a sourced 7-UI outcome, or delete this entry before publishing.
-  { value: "[X%]", label: "[Sourced 7-UI outcome]" },
+  // { value: "[X%]", label: "[Sourced 7-UI outcome]" },
 ];
 
 export const approach = [
