@@ -9,9 +9,12 @@ export function SiteHeader() {
         <Logo className="h-8 w-auto" />
       </Link>
       <nav aria-label="Primary" className="flex flex-wrap items-center gap-6 text-small">
+        <Link href="/">Home</Link>
         <Link href="/work">Work</Link>
+        {/* Hidden for now — restore later:
         <Link href="/#approach">Approach</Link>
         <Link href="/work/sagui">Systems</Link>
+        */}
         <a href={site.resume} target="_blank" rel="noopener noreferrer">Resume ↗</a>
         <a href={site.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
         <a href={`mailto:${site.email}`} className="bg-ink px-4 py-3 font-medium text-on-accent hover:text-on-accent">
