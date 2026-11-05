@@ -162,16 +162,3 @@ export function NextCase({ href, label, title }: { href: string; label: string; 
     </section>
   );
 }
-
-/** A row of portrait posters (SagUI brand imagery). */
-export function PosterRow({ posters }: { posters: { src: string; alt: string }[] }) {
-  return (
-    <ul className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,260px),1fr))] gap-4">
-      {posters.map((p) => (
-        <li key={p.src} className="border border-ink">
-          <Image src={p.src} alt={p.alt} width={1000} height={1400} sizes="(min-width: 1024px) 33vw, 90vw" className="h-auto w-full" />
-        </li>
-      ))}
-    </ul>
-  );
-}

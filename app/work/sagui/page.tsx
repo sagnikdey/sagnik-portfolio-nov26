@@ -4,11 +4,10 @@ import type { Metadata } from "next";
 import { Tag } from "@/components/tag";
 import { SpecPanel } from "@/components/spec-panel";
 import { ProofBar } from "@/components/proof-bar";
+import { Collage } from "@/components/collage";
 import { StepCards } from "@/components/step-cards";
 import { InkPanel } from "@/components/ink-panel";
 import { ConsoleBlock } from "@/components/console-block";
-import { CoverArt } from "@/components/cover-art";
-import { PosterRow } from "@/components/case-study";
 import { projects } from "@/content/site";
 
 export const metadata: Metadata = { title: "SagUI — a design system built for AI agents · Sagnik Dey" };
@@ -115,7 +114,7 @@ export default function SagUICaseStudy() {
 
       <section aria-label="Cover" className="container-page pt-12">
         <div className="group border border-ink">
-          <CoverArt src={sagui.cover!.src} alt={sagui.cover!.alt} className="h-[420px] md:h-[620px]" />
+          <Collage images={sagui.images} caption={sagui.caption} className="h-[560px]" />
         </div>
       </section>
 
@@ -146,14 +145,6 @@ export default function SagUICaseStudy() {
       <section aria-labelledby="principles" className="container-page pt-24">
         <H2 id="principles">Five principles</H2>
         <StepCards steps={principles} minHeight="min-h-[220px]" />
-        <div className="mt-4" />
-        <PosterRow
-          posters={[
-            { src: "/images/sagui/posters/poster-2.jpg", alt: "Poster: We are Agent-ready — SagUI's approval card, framed in a pale ring on navy" },
-            { src: "/images/sagui/posters/poster-3.jpg", alt: "Poster: We are Tokenized — SagUI's theming docs, framed in a yellow ring on teal" },
-            { src: "/images/sagui/posters/poster-4.jpg", alt: "Poster: We are In motion — SagUI's line chart, framed in a teal ring on cream" },
-          ]}
-        />
       </section>
 
       <section aria-labelledby="architecture" className="container-page pt-24">
@@ -202,15 +193,6 @@ export default function SagUICaseStudy() {
             <b className="font-mono text-caption text-inverse-accent">AGENT-NATIVE</b>
             <p className="mt-2 text-small text-inverse-muted">Approval card — human-in-the-loop questions before an agent acts · Text shimmer · Text morph</p>
           </div>
-        </div>
-        <div className="mt-8">
-        <PosterRow
-          posters={[
-            { src: "/images/sagui/posters/poster-1.jpg", alt: "Poster: We are Composable — SagUI's radio cards, framed in a blue ring on salmon" },
-            { src: "/images/sagui/posters/poster-5.jpg", alt: "Poster: We are Accessible — SagUI's app shell overview, framed in a navy ring on pink" },
-            { src: "/images/sagui/posters/poster-6.jpg", alt: "Poster: We are Themeable — SagUI's donut chart in dark mode, framed in a pink ring on teal" },
-          ]}
-        />
         </div>
         <div className="mt-8 grid grid-cols-[repeat(auto-fit,minmax(min(100%,420px),1fr))] items-center gap-8">
           <div className="flex flex-col gap-3.5 text-body">
