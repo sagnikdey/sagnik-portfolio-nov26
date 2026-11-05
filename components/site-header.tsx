@@ -12,8 +12,8 @@ export function SiteHeader() {
         <Link href="/work">Work</Link>
         <Link href="/#approach">Approach</Link>
         <Link href="/work/sagui">Systems</Link>
-        <a href={site.resume}>Resume ↗</a>
-        <a href={site.linkedin}>LinkedIn ↗</a>
+        <a href={site.resume} target="_blank" rel="noopener noreferrer">Resume ↗</a>
+        <a href={site.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
         <a href={`mailto:${site.email}`} className="bg-ink px-4 py-3 font-medium text-on-accent hover:text-on-accent">
           Work with me
         </a>
