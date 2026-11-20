@@ -102,6 +102,21 @@ export const projects: Project[] = [
       { src: "/images/sales-analytics/alerts.png", alt: "Sales Analytics alerts", role: "back-right", style: "right-[6%] top-[130px] w-[50%]" },
     ],
   },
+  {
+    slug: "carmelos",
+    number: "04",
+    title: "Carmelo’s Online Ordering",
+    tag: { label: "Product", variant: "outline" },
+    year: "2026",
+    role: "Designer, Product Manager & Developer",
+    description: "First-party pickup ordering for a family Mexican grill whose website couldn’t take an order: storefront, a menu the restaurant runs in Payload CMS, Stripe checkout and a kitchen staff app.",
+    live: { href: "https://carmello-three.vercel.app/", label: "Live concept" },
+    caption: "PHONE → MENU → BAG → PICKUP",
+    images: [
+      { src: "/images/carmelos/home-desktop.jpg", alt: "Carmelo’s homepage with a red Order pickup button", role: "back-left", style: "left-[5%] top-[40px] w-[66%]" },
+      { src: "/images/carmelos/menu-phone.jpg", alt: "Carmelo’s menu on a phone", role: "front", style: "right-[8%] top-[70px] w-[24%]" },
+    ],
+  },
   // Hidden until rebuilt — uncomment to show again.
   // {
   //   slug: "quickstop-ios",
