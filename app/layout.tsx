@@ -18,8 +18,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${sans.variable} ${mono.variable} antialiased`}>
       <body className="min-h-screen bg-ground bg-dots font-sans text-ink">
+        <a href="#main" className="sr-only bg-ink px-4 py-3 font-medium text-on-accent hover:text-on-accent focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50">
+          Skip to content
+        </a>
         <SiteHeader />
-        <main>{children}</main>
+        <main id="main">{children}</main>
         <SpeedInsights />
       </body>
       <GoogleAnalytics gaId="G-09MYWQTXB4" />

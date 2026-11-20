@@ -122,12 +122,12 @@ export default function SagUICaseStudy() {
       <section aria-labelledby="why" className="container-page pt-24">
         <H2 id="why">Why I built it</H2>
         <div className="flex flex-col gap-5 text-body">
-          <p className="max-w-[820px]">
+          <p className="max-w-measure">
             I&rsquo;ve spent 16+ years designing enterprise SaaS. At 7-Eleven I built 7-UI, which taught me that a design
             system succeeds or fails on adoption. Tokens and components only matter if the people building products use them
             correctly.
           </p>
-          <p className="max-w-[820px]">That &ldquo;people&rdquo; now includes AI. More and more UI is generated, not hand-coded — and it fails in predictable ways:</p>
+          <p className="max-w-measure">That &ldquo;people&rdquo; now includes AI. More and more UI is generated, not hand-coded — and it fails in predictable ways:</p>
           <ul className="grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-3">
             {failures.map(([t, d]) => (
               <li key={t} className="flex flex-col gap-1.5 border border-ink bg-surface p-4">
@@ -277,8 +277,6 @@ export default function SagUICaseStudy() {
               <li>One-line rebrands, in both themes</li>
               <li>Figma, Storybook and MCP in step</li>
             </ul>
-            {/* TODO: add a measured result (e.g. Sales Analytics build time, validate_usage pass rate) */}
-            <p className="font-mono text-caption text-ink-muted">[Add a measured result: e.g. build time for Sales Analytics, validate_usage pass rate]</p>
           </div>
           <div className="flex flex-col gap-4 border border-ink bg-surface p-8 text-body">
             <h3 className="text-title font-bold">What I learned</h3>

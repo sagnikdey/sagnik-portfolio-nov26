@@ -63,6 +63,8 @@
   --text-chip: 11px;
   --text-chip--line-height: 1.2;
 
+  --container-measure: 50ch;
+
   --radius-*: initial;
   --radius-none: 0px;
   --shadow-*: initial;
@@ -91,6 +93,9 @@
 
 @layer base {
   a { text-decoration: none; }
+  p, li, blockquote, figcaption { text-wrap: pretty; }
+  h1, h2, h3 { text-wrap: balance; }
   a:hover { color: var(--color-accent); }
   :focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+  .bg-accent :focus-visible { outline-color: var(--color-on-accent); }
 }

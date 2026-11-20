@@ -23,19 +23,15 @@ export default function Home() {
             it clear as the product and the team grow.
           </p>
           <div className="flex flex-wrap justify-end gap-3">
-            <ButtonPrimary href={`mailto:${site.email}`}>Get in touch →</ButtonPrimary>
-            <ButtonSecondary href="#work">Selected work</ButtonSecondary>
+            <ButtonPrimary href="#work">Selected work</ButtonPrimary>
+            <ButtonSecondary href={`mailto:${site.email}`}>Work with me</ButtonSecondary>
           </div>
         </div>
         <ProofBar items={proof} />
       </section>
 
-      <Section id="approach" title="How I work">
-        <StepCards steps={approach} />
-      </Section>
-
       <Section id="work" title="Selected work" note="One system → the products built on it">
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,480px),1fr))] gap-4">
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,360px),1fr))] gap-4">
           {projects.filter((p) => p.featured).map((p) => (
             <WorkCard key={p.slug} p={p} />
           ))}
@@ -49,6 +45,10 @@ export default function Home() {
             <QuoteCard key={q.name} q={q} />
           ))}
         </div>
+      </Section>
+
+      <Section id="approach" title="How I work">
+        <StepCards steps={approach} />
       </Section>
 
       <ContactStrip />

@@ -10,7 +10,7 @@ export const site = {
 export const proof = [
   { value: "16+ yrs", label: "Enterprise SaaS design" },
   { value: "85", label: "SagUI components, Figma ↔ code" },
-  { value: "6", label: "MCP tools for AI agents" },
+  { value: "Best Buy · Walmart · HP", label: "Fortune 500 work" },
   // TODO: replace with a sourced 7-UI outcome, or delete this entry before publishing.
   // { value: "[X%]", label: "[Sourced 7-UI outcome]" },
 ];
@@ -52,7 +52,7 @@ export const projects: Project[] = [
     tag: { label: "System", variant: "fill" },
     year: "2026",
     description: "A design system built for people and AI agents, so new apps get assembled from proven parts instead of invented.",
-    meta: "85 components · two-tier tokens · MCP server",
+    meta: "85 components · Figma and code in sync · AI agents can use it directly",
     live: { href: "https://sagui-docs.vercel.app/", label: "Live docs" },
     links: [
       { href: "https://www.figma.com/design/kNksgXgWFkl9ejS9RVm2Hq/SagUI-Design-System", label: "Figma" },
@@ -109,6 +109,7 @@ export const projects: Project[] = [
     tag: { label: "Product", variant: "outline" },
     year: "2026",
     role: "Designer, Product Manager & Developer",
+    featured: true,
     description: "First-party pickup ordering for a family Mexican grill whose website couldn’t take an order: storefront, a menu the restaurant runs in Payload CMS, Stripe checkout and a kitchen staff app.",
     live: { href: "https://carmello-three.vercel.app/", label: "Live concept" },
     links: [{ href: "https://www.figma.com/design/5lJjON6iQ2HaZzBrRdeEU3/", label: "Figma" }],
@@ -151,6 +152,6 @@ export const projects: Project[] = [
 export type Quote = { quote: string; name: string; role: string; lead?: boolean; placeholder?: boolean };
 
 export const quotes: Quote[] = [
-  { quote: "He would be assigned to the most difficult, complex designs—and would knock them out of the park every time.", name: "EDDY RUZ", role: "Sr. Principal Lead, Bazaarvoice", lead: true },
-  { quote: "I've seen him tackle massive projects for Fortune 500 Companies like Best Buy, Walmart, HP and countless others. He's decisive and intuitive.", name: "BILLY HOLLIS", role: "Developer & Designer" },
+  { quote: "He would be assigned to the most difficult, complex designs—and would knock them out of the park every time.", name: "Eddy Ruz", role: "Sr. Principal Lead, Bazaarvoice", lead: true },
+  { quote: "I've seen him tackle massive projects for Fortune 500 Companies like Best Buy, Walmart, HP and countless others. He's decisive and intuitive.", name: "Billy Hollis", role: "Developer & Designer" },
 ];

@@ -7,7 +7,7 @@ import { Tag } from "./tag";
 export function WorkCard({ p, compact = false }: { p: Project; compact?: boolean }) {
   const flag = p.flagship && !compact;
   return (
-    <article className={`group flex overflow-hidden border border-ink bg-surface ${flag ? "col-span-full flex-wrap" : "flex-col"}`}>
+    <article className={`group relative flex overflow-hidden border border-ink bg-surface ${flag ? "col-span-full flex-wrap" : "flex-col"}`}>
       {p.cover ? (
         <CoverArt src={p.cover.src} alt={p.cover.alt} className={flag ? "h-[460px] flex-[2_1_560px]" : "h-[340px]"} />
       ) : (
@@ -22,9 +22,9 @@ export function WorkCard({ p, compact = false }: { p: Project; compact?: boolean
         <p className="text-body text-ink-body">{p.description}</p>
         {p.meta && <p className="font-mono text-caption text-ink-muted">{p.meta}</p>}
         <div className="mt-auto flex flex-wrap gap-5 border-t border-border-subtle pt-3.5 font-medium">
-          <Link href={`/work/${p.slug}`}>Case study →</Link>
-          {p.live && <a href={p.live.href} target="_blank" rel="noopener noreferrer">{p.live.label} ↗</a>}
-          {p.links?.map((l) => <a key={l.href} href={l.href} target="_blank" rel="noopener noreferrer">{l.label} ↗</a>)}
+          <Link href={`/work/${p.slug}`} className="after:absolute after:inset-0">Case study →</Link>
+          {p.live && <a href={p.live.href} target="_blank" rel="noopener noreferrer" className="relative z-10">{p.live.label} ↗</a>}
+          {p.links?.map((l) => <a key={l.href} href={l.href} target="_blank" rel="noopener noreferrer" className="relative z-10">{l.label} ↗</a>)}
         </div>
       </div>
     </article>

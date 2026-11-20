@@ -47,7 +47,7 @@ export function CsSection({ id, title, children }: { id: string; title: string; 
 }
 
 export function Prose({ children }: { children: React.ReactNode }) {
-  return <div className="flex max-w-[820px] flex-col gap-5 text-body">{children}</div>;
+  return <div className="flex max-w-measure flex-col gap-5 text-body">{children}</div>;
 }
 
 export function H3({ children }: { children: React.ReactNode }) {
@@ -119,7 +119,7 @@ export function Table({ head, rows }: { head: string[]; rows: string[][] }) {
         </thead>
         <tbody>
           {rows.map((r) => (
-            <tr key={r[0]} className="border-b border-border-subtle last:border-b-0">
+            <tr key={r.join("|")} className="border-b border-border-subtle last:border-b-0">
               {r.map((c, i) => <td key={i} className={`px-4 py-3 ${i === 0 ? "font-bold" : "text-ink-muted"}`}>{c}</td>)}
             </tr>
           ))}
