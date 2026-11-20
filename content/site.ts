@@ -111,6 +111,7 @@ export const projects: Project[] = [
     role: "Designer, Product Manager & Developer",
     description: "First-party pickup ordering for a family Mexican grill whose website couldn’t take an order: storefront, a menu the restaurant runs in Payload CMS, Stripe checkout and a kitchen staff app.",
     live: { href: "https://carmello-three.vercel.app/", label: "Live concept" },
+    links: [{ href: "https://www.figma.com/design/5lJjON6iQ2HaZzBrRdeEU3/", label: "Figma" }],
     caption: "PHONE → MENU → BAG → PICKUP",
     images: [
       { src: "/images/carmelos/home-desktop.jpg", alt: "Carmelo’s homepage with a red Order pickup button", role: "back-left", style: "left-[5%] top-[40px] w-[66%]" },

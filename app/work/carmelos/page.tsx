@@ -49,6 +49,7 @@ export default function CarmelosCaseStudy() {
             value: (
               <span className="flex flex-wrap gap-4">
                 <a href="https://carmello-three.vercel.app/" target="_blank" rel="noopener noreferrer">Live concept ↗</a>
+                <a href="https://www.figma.com/design/5lJjON6iQ2HaZzBrRdeEU3/" target="_blank" rel="noopener noreferrer">Figma ↗</a>
                 <a href="https://carmelosmexicangrill.com/" target="_blank" rel="noopener noreferrer">Current site ↗</a>
               </span>
             ),
